@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uber Clone</title>
+  <link rel="stylesheet" href="uber.css">
+</head>
+<body>
+  <header>
+    <h1>Uber Clone</h1>
+  </header>
+
+  <main>
+    <section id="ride-booking">
+      <h2>Book a Ride</h2>
+      
+      <!-- Pickup and Drop-off Location -->
+      <div class="input-container">
+        <label for="pickup-location">Pick-up Location</label>
+        <input type="text" id="pickup-location" placeholder="Enter your location">
+      </div>
+
+      <div class="input-container">
+        <label for="dropoff-location">Drop-off Location</label>
+        <input type="text" id="dropoff-location" placeholder="Enter destination">
+      </div>
+
+      <!-- Ride Button -->
+      <button id="book-ride">Book Ride</button>
+    </section>
+
+    <!-- Ride Status -->
+    <section id="ride-status" style="display: none;">
+      <h2>Ride Status</h2>
+      <p>Your ride is being processed...</p>
+      <p id="estimated-time"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
